@@ -12,5 +12,5 @@ pip install -r requirements.txt
 
 #### Usage
 ```
-python build_thredds /path/to/filepaths.txt ../docker-compose-extra.yml
+python build_thredds.py /path/to/filepaths.txt ../docker-compose-extra.yml
 ```
