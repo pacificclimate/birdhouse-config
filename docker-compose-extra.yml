@@ -16,9 +16,10 @@ services:
 
   thredds:
     volumes:
-      - /storage/data/climate/downscale/BCCAQ2/bccaqv2_with_metadata/:/pavics-ncml/BCCAQv2
-      - /storage/data/projects/comp_support/daccs/birds/wps_test_data:/pavics-ncml/TestData
-      - /storage/data/projects/comp_support/climate_explorer_data_prep/hydro/sample_data/set4:/pavics-ncml/RVIC
+      - /storage/data/projects/comp_support/daccs/test-data:/pavics-ncml/storage/data/projects/comp_support/daccs/test-data
+      - /storage/data/climate/downscale/BCCAQ2+PRISM/high_res_downscaling/bccaq_gcm_bc_subset/rcp85/degree_days/CanESM2/fdd_seasonal_CanESM2_rcp85_r1i1p1_1951-2100.nc:/pavics-ncml/storage/data/climate/downscale/BCCAQ2+PRISM/high_res_downscaling/bccaq_gcm_bc_subset/rcp85/degree_days/CanESM2/fdd_seasonal_CanESM2_rcp85_r1i1p1_1951-2100.nc
+      - /storage/data/climate/downscale/BCCAQ2+PRISM/high_res_downscaling/bccaq_gcm_bc_subset/rcp85/degree_days/CanESM2/gdd_annual_CanESM2_rcp85_r1i1p1_1951-2100.nc:/pavics-ncml/storage/data/climate/downscale/BCCAQ2+PRISM/high_res_downscaling/bccaq_gcm_bc_subset/rcp85/degree_days/CanESM2/gdd_annual_CanESM2_rcp85_r1i1p1_1951-2100.nc
+      - /storage/data/projects/comp_support/climate_explorer_data_prep/hydro/sample_data/set4:/pavics-ncml/storage/data/projects/comp_support/climate_explorer_data_prep/hydro/sample_data/set4
       - /storage/data/climate/downscale/BCCAQ2/bccaqv2_with_metadata/pr_day_BCCAQv2+ANUSPLIN300_ACCESS1-0_historical+rcp45_r1i1p1_19500101-21001231.nc:/pavics-ncml/bccaq_version_2/pr_day_BCCAQv2+ANUSPLIN300_ACCESS1-0_historical+rcp45_r1i1p1_19500101-21001231.nc
       - /storage/data/climate/downscale/BCCAQ2/bccaqv2_with_metadata/pr_day_BCCAQv2+ANUSPLIN300_ACCESS1-0_historical+rcp85_r1i1p1_19500101-21001231.nc:/pavics-ncml/bccaq_version_2/pr_day_BCCAQv2+ANUSPLIN300_ACCESS1-0_historical+rcp85_r1i1p1_19500101-21001231.nc
       - /storage/data/climate/downscale/BCCAQ2/bccaqv2_with_metadata/pr_day_BCCAQv2+ANUSPLIN300_bcc-csm1-1_historical+rcp26_r1i1p1_19500101-21001231.nc:/pavics-ncml/bccaq_version_2/pr_day_BCCAQv2+ANUSPLIN300_bcc-csm1-1_historical+rcp26_r1i1p1_19500101-21001231.nc
