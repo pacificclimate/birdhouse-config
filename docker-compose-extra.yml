@@ -931,4 +931,4 @@ services:
     - /storage/data/projects/hydrology/dataportal/CMIP5/VICGL/allwsbc.MPI-ESM-LR_rcp85_r3i1p1.1945to2099.SOIL_MOIST_TOT.nc:/pavics-ncml/storage/data/projects/hydrology/dataportal/CMIP5/VICGL/allwsbc.MPI-ESM-LR_rcp85_r3i1p1.1945to2099.SOIL_MOIST_TOT.nc
     - /storage/data/projects/hydrology/dataportal/CMIP5/VICGL/allwsbc.MPI-ESM-LR_rcp85_r3i1p1.1945to2099.SWE.nc:/pavics-ncml/storage/data/projects/hydrology/dataportal/CMIP5/VICGL/allwsbc.MPI-ESM-LR_rcp85_r3i1p1.1945to2099.SWE.nc
     - /storage/data/projects/hydrology/dataportal/CMIP5/VICGL/allwsbc.MPI-ESM-LR_rcp85_r3i1p1.1945to2099.TRANSP_VEG.nc:/pavics-ncml/storage/data/projects/hydrology/dataportal/CMIP5/VICGL/allwsbc.MPI-ESM-LR_rcp85_r3i1p1.1945to2099.TRANSP_VEG.nc
-version: '2.1'
+version: '3.4'
