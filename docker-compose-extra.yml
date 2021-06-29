@@ -12,6 +12,12 @@ services:
     - /storage/data/projects/comp_support/geoserver-test-data-dir/webapps_geoserver_web-info_web.xml:/opt/geoserver/webapps/geoserver/WEB-INF/web.xml
   thredds:
     volumes:
+    - /storage/data/projects/hydrology/vic_gen2/input/routing/columbia/parameters/pcic.pnw.rvic.input_20170927.nc:/pavics-ncml/storage/data/projects/hydrology/vic_gen2/input/routing/columbia/parameters/pcic.pnw.rvic.input_20170927.nc
+    - /storage/data/projects/hydrology/vic_gen2/input/routing/columbia/parameters/domain.pnw.pcic.20170927.nc:/pavics-ncml/storage/data/projects/hydrology/vic_gen2/input/routing/columbia/parameters/domain.pnw.pcic.20170927.nc
+    - /storage/data/projects/hydrology/vic_gen2/output/projections/columbia/COLUMBIA/ACCESS1-0_rcp45_r1i1p1/flux/columbia_vicset2_1945to2100.nc:/pavics-ncml/storage/data/projects/hydrology/vic_gen2/output/projections/columbia/COLUMBIA/ACCESS1-0_rcp45_r1i1p1/flux/columbia_vicset2_1945to2100.nc
+    - /storage/data/projects/hydrology/vic_gen2/input/routing/fraser/parameters/rvic.parameters_fraser_v2.nc:/pavics-ncml/storage/data/projects/hydrology/vic_gen2/input/routing/fraser/parameters/rvic.parameters_fraser_v2.nc
+    - /storage/data/projects/hydrology/vic_gen2/input/routing/fraser/parameters/rvic.domain_fraser_v2.nc:/pavics-ncml/storage/data/projects/hydrology/vic_gen2/input/routing/fraser/parameters/rvic.domain_fraser_v2.nc
+    - /storage/data/projects/hydrology/vic_gen2/output/projections/fraser/FRASER/ACCESS1-0_rcp45_r1i1p1/flux/fraser_vicset2_1945to2100.nc:/pavics-ncml/storage/data/projects/hydrology/vic_gen2/output/projections/fraser/FRASER/ACCESS1-0_rcp45_r1i1p1/flux/fraser_vicset2_1945to2100.nc
     - /storage/data/projects/hydrology/vic_gen2/output/projections/peace/PEACE/ACCESS1-0_rcp45_r1i1p1/flux/peace_vicset2_1945to2100.nc:/pavics-ncml/storage/data/projects/hydrology/vic_gen2/output/projections/peace/PEACE/ACCESS1-0_rcp45_r1i1p1/flux/peace_vicset2_1945to2100.nc
     - /storage/data/projects/hydrology/vic_gen2/input/routing/peace/parameters/bc.rvic.peace.20161018.nc:/pavics-ncml/storage/data/projects/hydrology/vic_gen2/input/routing/peace/parameters/bc.rvic.peace.20161018.nc
     - /storage/data/projects/hydrology/vic_gen2/input/routing/peace/parameters/domain.rvic.peace.20161018.nc:/pavics-ncml/storage/data/projects/hydrology/vic_gen2/input/routing/peace/parameters/domain.rvic.peace.20161018.nc
