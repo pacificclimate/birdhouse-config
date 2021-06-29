@@ -21,6 +21,7 @@ services:
     - /storage/data/projects/hydrology/vic_gen2/output/projections/peace/PEACE/ACCESS1-0_rcp45_r1i1p1/flux/peace_vicset2_1945to2100.nc:/pavics-ncml/storage/data/projects/hydrology/vic_gen2/output/projections/peace/PEACE/ACCESS1-0_rcp45_r1i1p1/flux/peace_vicset2_1945to2100.nc
     - /storage/data/projects/hydrology/vic_gen2/input/routing/peace/parameters/bc.rvic.peace.20161018.nc:/pavics-ncml/storage/data/projects/hydrology/vic_gen2/input/routing/peace/parameters/bc.rvic.peace.20161018.nc
     - /storage/data/projects/hydrology/vic_gen2/input/routing/peace/parameters/domain.rvic.peace.20161018.nc:/pavics-ncml/storage/data/projects/hydrology/vic_gen2/input/routing/peace/parameters/domain.rvic.peace.20161018.nc
+    - /storage/data/projects/hydrology/vic_gen2/input/routing/peace/parameters/bc.rvic.peace.20171019.nc:/pavics-ncml/storage/data/projects/hydrology/vic_gen2/input/routing/peace/parameters/bc.rvic.peace.20171019.nc
     - /storage/data/climate/PRISM/dataportal/pr_monClim_PRISM_historical_run1_197101-200012.nc:/pavics-ncml/storage/data/climate/PRISM/dataportal/pr_monClim_PRISM_historical_run1_197101-200012.nc
     - /storage/data/climate/PRISM/dataportal/pr_monClim_PRISM_historical_run1_198101-201012.nc:/pavics-ncml/storage/data/climate/PRISM/dataportal/pr_monClim_PRISM_historical_run1_198101-201012.nc
     - /storage/data/climate/PRISM/dataportal/tmax_monClim_PRISM_historical_run1_197101-200012.nc:/pavics-ncml/storage/data/climate/PRISM/dataportal/tmax_monClim_PRISM_historical_run1_197101-200012.nc
