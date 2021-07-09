@@ -12,6 +12,7 @@ services:
     - /storage/data/projects/comp_support/geoserver-test-data-dir/webapps_geoserver_web-info_web.xml:/opt/geoserver/webapps/geoserver/WEB-INF/web.xml
   thredds:
     volumes:
+    - /storage/data/projects/hydrology/vic_gen2/input/routing/uh:/pavics-ncml/storage/data/projects/hydrology/vic_gen2/input/routing/uh
     - /storage/data/projects/hydrology/vic_gen2/input/routing/columbia/parameters/pcic.pnw.rvic.input_20170927.nc:/pavics-ncml/storage/data/projects/hydrology/vic_gen2/input/routing/columbia/parameters/pcic.pnw.rvic.input_20170927.nc
     - /storage/data/projects/hydrology/vic_gen2/input/routing/columbia/parameters/domain.pnw.pcic.20170927.nc:/pavics-ncml/storage/data/projects/hydrology/vic_gen2/input/routing/columbia/parameters/domain.pnw.pcic.20170927.nc
     - /storage/data/projects/hydrology/vic_gen2/output/projections/columbia/COLUMBIA/ACCESS1-0_rcp45_r1i1p1/flux/columbia_vicset2_1945to2100.nc:/pavics-ncml/storage/data/projects/hydrology/vic_gen2/output/projections/columbia/COLUMBIA/ACCESS1-0_rcp45_r1i1p1/flux/columbia_vicset2_1945to2100.nc
