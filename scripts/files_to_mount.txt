@@ -1,0 +1,13 @@
+/storage/data/projects/comp_support/climate_explorer_data_prep/climatological_means
+/storage/data/climate/downscale/BCCAQ2/bccaqv2_with_metadata
+/storage/data/projects/hydrology/dataportal/CMIP5/VICGL
+/storage/data/climate/downscale/CMIP5/BCCAQ
+/storage/data/climate/downscale/CMIP5/BCSD
+/storage/data/climate/hydrology/vic/gen1/output
+/storage/data/projects/dataportal/data/vic_gen1_input
+/storage/data/climate/downscale/BCCAQ2/ANUSPLIN/climatologies
+/storage/data/projects/hydrology/vic_gen2
+/storage/data/climate/PRISM/dataportal
+/storage/data/projects/comp_support/daccs/test-data
+/storage/data/projects/comp_support/climate_explorer_data_prep/hydro/sample_data/set4
+/storage/data/climate/observations/gridded/PRISM
