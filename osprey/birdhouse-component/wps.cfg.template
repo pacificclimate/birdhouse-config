@@ -1,0 +1,11 @@
+[server]
+outputurl = https://${BIRDHOUSE_FQDN_PUBLIC}/wpsoutputs
+outputpath = /data/wpsoutputs
+maxrequestsize = 65gb
+parallelprocesses = 14
+
+[logging]
+level = INFO
+db_echo = false
+
+${BIRDHOUSE_EXTRA_PYWPS_CONFIG}

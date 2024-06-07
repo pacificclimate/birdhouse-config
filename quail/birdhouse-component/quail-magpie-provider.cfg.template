@@ -1,0 +1,8 @@
+providers:
+  quail:
+    url: http://${BIRDHOUSE_FQDN}:8103/wps
+    title: Quail
+    public: true
+    c4i: false
+    type: wps
+    sync_type: wps
