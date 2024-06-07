@@ -14,23 +14,27 @@ services:
     - /storage/data/projects/comp_support/geoserver-test-data-dir/webapps_geoserver_web-info_web.xml:/opt/geoserver/webapps/geoserver/WEB-INF/web.xml
   thredds:
     volumes:
-      - /storage/data/projects/comp_support/climate_explorer_data_prep/climatological_means:/pavics-ncml/storage/data/projects/comp_support/climate_explorer_data_prep/climatological_means
-      - /storage/data/climate/downscale/BCCAQ2/bccaqv2_with_metadata:/pavics-ncml/storage/data/climate/downscale/BCCAQ2/bccaqv2_with_metadata
-      - /storage/data/projects/hydrology/dataportal/CMIP5/VICGL:/pavics-ncml/storage/data/projects/hydrology/dataportal/CMIP5/VICGL
-      - /storage/data/climate/downscale/CMIP5/BCCAQ:/pavics-ncml/storage/data/climate/downscale/CMIP5/BCCAQ
-      - /storage/data/climate/downscale/CMIP5/BCSD:/pavics-ncml/storage/data/climate/downscale/CMIP5/BCSD
-      - /storage/data/climate/downscale/BCCAQ2/CMIP6_BCCAQv2:/pavics-ncml/storage/data/climate/downscale/BCCAQ2/CMIP6_BCCAQv2
-      - /storage/data/climate/hydrology/vic/gen1/output:/pavics-ncml/storage/data/climate/hydrology/vic/gen1/output
-      - /storage/data/projects/dataportal/data/vic_gen1_input:/pavics-ncml/storage/data/projects/dataportal/data/vic_gen1_input
-      - /storage/data/projects/dataportal/data/vic-gen2-forcing:/pavics-ncml/storage/data/projects/dataportal/data/vic-gen2-forcing
-      - /storage/data/projects/dataportal/data/hydrology/vic_gen1_followup/vic_gen1_routed:/pavics-ncml/storage/data/projects/dataportal/data/hydrology/vic_gen1_followup/vic_gen1_routed
-      - /storage/data/projects/dataportal/data/hydrology/vic_cmip5/merged:/pavics-ncml/storage/data/projects/dataportal/data/hydrology/vic_cmip5/merged
-      - /storage/data/climate/downscale/BCCAQ2/ANUSPLIN/climatologies:/pavics-ncml/storage/data/climate/downscale/BCCAQ2/ANUSPLIN/climatologies
-      - /storage/data/projects/hydrology/vic_gen2:/pavics-ncml/storage/data/projects/hydrology/vic_gen2
-      - /storage/data/climate/PRISM/dataportal:/pavics-ncml/storage/data/climate/PRISM/dataportal
-      - /storage/data/projects/comp_support/daccs/test-data:/pavics-ncml/storage/data/projects/comp_support/daccs/test-data
-      - /storage/data/projects/comp_support/climate_explorer_data_prep/hydro/sample_data/set4:/pavics-ncml/storage/data/projects/comp_support/climate_explorer_data_prep/hydro/sample_data/set4
-      - /storage/data/climate/observations/gridded/PRISM:/pavics-ncml/storage/data/climate/observations/gridded/PRISM
+      - /storage/data/projects/comp_support/climate_explorer_data_prep/climatological_means:/${THREDDS_DATASET_LOCATION_ON_CONTAINER}/storage/data/projects/comp_support/climate_explorer_data_prep/climatological_means
+      - /storage/data/climate/downscale/BCCAQ2/bccaqv2_with_metadata:/${THREDDS_DATASET_LOCATION_ON_CONTAINER}/storage/data/climate/downscale/BCCAQ2/bccaqv2_with_metadata
+      - /storage/data/projects/hydrology/dataportal/CMIP5/VICGL:/${THREDDS_DATASET_LOCATION_ON_CONTAINER}/storage/data/projects/hydrology/dataportal/CMIP5/VICGL
+      - /storage/data/projects/hydrology/dynwat/bccoast/cmip5/CanESM2_rcp45_r1i1p1/output/netcdf:/${THREDDS_DATASET_LOCATION_ON_CONTAINER}/storage/data/projects/hydrology/dynwat/bccoast/cmip5/CanESM2_rcp45_r1i1p1/output/netcdf
+      - /storage/data/climate/downscale/CMIP5/BCCAQ:/${THREDDS_DATASET_LOCATION_ON_CONTAINER}/storage/data/climate/downscale/CMIP5/BCCAQ
+      - /storage/data/climate/downscale/CMIP5/BCSD:/${THREDDS_DATASET_LOCATION_ON_CONTAINER}/storage/data/climate/downscale/CMIP5/BCSD
+      - /storage/data/climate/downscale/BCCAQ2/CMIP6_BCCAQv2:/${THREDDS_DATASET_LOCATION_ON_CONTAINER}/storage/data/climate/downscale/BCCAQ2/CMIP6_BCCAQv2
+      - /storage/data/climate/downscale/MBCn/CMIP6_MBCn:/${THREDDS_DATASET_LOCATION_ON_CONTAINER}/storage/data/climate/downscale/MBCn/CMIP6_MBCn
+      - /storage/data/climate/hydrology/vic/gen1/output:/${THREDDS_DATASET_LOCATION_ON_CONTAINER}/storage/data/climate/hydrology/vic/gen1/output
+      - /storage/data/projects/dataportal/data/vic_gen1_input:/${THREDDS_DATASET_LOCATION_ON_CONTAINER}/storage/data/projects/dataportal/data/vic_gen1_input
+      - /storage/data/projects/dataportal/data/vic-gen2-forcing:/${THREDDS_DATASET_LOCATION_ON_CONTAINER}/storage/data/projects/dataportal/data/vic-gen2-forcing
+      - /storage/data/projects/dataportal/data/hydrology/vic_gen1_followup/vic_gen1_routed:/${THREDDS_DATASET_LOCATION_ON_CONTAINER}/storage/data/projects/dataportal/data/hydrology/vic_gen1_followup/vic_gen1_routed
+      - /storage/data/projects/dataportal/data/hydrology/vic_cmip5/merged:/${THREDDS_DATASET_LOCATION_ON_CONTAINER}/storage/data/projects/dataportal/data/hydrology/vic_cmip5/merged
+      - /storage/data/climate/downscale/BCCAQ2/ANUSPLIN/climatologies:/${THREDDS_DATASET_LOCATION_ON_CONTAINER}/storage/data/climate/downscale/BCCAQ2/ANUSPLIN/climatologies
+      - /storage/data/projects/hydrology/vic_gen2:/${THREDDS_DATASET_LOCATION_ON_CONTAINER}/storage/data/projects/hydrology/vic_gen2
+      - /storage/data/climate/PRISM/dataportal:/${THREDDS_DATASET_LOCATION_ON_CONTAINER}/storage/data/climate/PRISM/dataportal
+      - /storage/data/projects/comp_support/daccs/test-data:/${THREDDS_DATASET_LOCATION_ON_CONTAINER}/storage/data/projects/comp_support/daccs/test-data
+      - /storage/data/projects/comp_support/climate_explorer_data_prep/hydro/sample_data/set4:/${THREDDS_DATASET_LOCATION_ON_CONTAINER}/storage/data/projects/comp_support/climate_explorer_data_prep/hydro/sample_data/set4
+      - /storage/data/climate/observations/gridded/PRISM:/${THREDDS_DATASET_LOCATION_ON_CONTAINER}/storage/data/climate/observations/gridded/PRISM
+      - /storage/data/climate/observations/gridded/PCIC_Blend/diagonal:/${THREDDS_DATASET_LOCATION_ON_CONTAINER}/storage/data/climate/observations/gridded/PCIC_Blend/diagonal
+      - /var/lib/docker/volumes/birdhouse_wps_outputs/_data:/${THREDDS_DATASET_LOCATION_ON_CONTAINER}/birdhouse_wps_outputs
 #  testthredds:
 #    volumes:
 #      - /storage/data/projects/hydrology/vic_gen2:/pavics-testdata/storage/data/projects/hydrology/vic_gen2
